@@ -1,0 +1,92 @@
+body {
+  background: #849b2a;
+  background: linear-gradient(
+    90deg,
+    rgba(132, 155, 42, 1) 0%,
+    rgba(95, 158, 98, 1) 14%,
+    rgba(64, 161, 144, 1) 25%,
+    rgba(73, 177, 139, 1) 35%,
+    rgba(81, 190, 135, 1) 44%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(99, 201, 129, 1) 54%,
+    rgba(115, 203, 124, 1) 59%,
+    rgba(237, 221, 83, 1) 100%
+  );
+}
+h1 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+form {
+  width: 500px;
+}
+fieldset {
+  border: 7px solid black;
+  border-radius: 18px;
+}
+legend {
+  font-family: fantasy;
+}
+input[type] {
+  border-radius: 15px;
+}
+input[required] {
+  border: 2px solid red;
+}
+input[optional] {
+  border: 2px solid blue;
+}
+input:hover {
+  background-color: yellow;
+}
+input:focus {
+  background: #833ab4;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(253, 54, 36, 1) 58%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+input + p {
+  display: none;
+}
+input:hover + p {
+  display: inline;
+  font-weight: 700;
+  font-size: 10px;
+  background-color: rgba(11, 204, 78, 0.586);
+  color: black;
+  border-radius: 20px;
+}
+img {
+  display: none;
+}
+input[type="email"]:focus:valid ~ img#valid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+input[type="email"]:focus:invalid ~ img#Invalid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+select {
+  background-color: rgba(62, 4, 4, 0.848);
+  border-radius: 10px;
+  color: white;
+  font-weight: 800;
+}
+input[type="radio"]:checked {
+  height: 15px;
+  width: 15px;
+}
+input[type="radio"]:checked + label {
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+}
+textarea {
+  resize: none;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Course Registration Form</h1>
+    <form action=" ">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label for="FN">First Name</label></td>
+            <td>
+              <input type="text" name="fn" placeholder="sneka" />
+
+              <p>Enter your Name</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="SN">Sur Name</label></td>
+            <td><input type="text" name="sn" /></td>
+          </tr>
+          <tr>
+            <td><label for="mn">Mobile Number</label></td>
+            <td>
+              <input type="tel" name="mn" />
+              <p>Enter your Mob</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">email</label></td>
+            <td>
+              <input type="email" name="email" />
+              <p>Enter your email</p>
+              <img src="/frontend/check-mark (1).png" alt="" id="valid" />
+              <img src="/frontend/incorrect.png" alt="" id="Invalid" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="pw">Password</label></td>
+            <td>
+              <input type="password" name="pw" />
+              <p>Enter your Password</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="cp">Confirm password</label></td>
+            <td><input type="password" name="cp" /><br /></td>
+          </tr>
+          <tr>
+            <td><label for="DOB">DOB</label></td>
+            <td>
+              <input type="date" name="DOB" />
+              <p>Enter your DOB</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender</label></td>
+            <td>
+              <input type="radio" name="gender" value="M" /><label>Male</label>
+              <input type="radio" name="gender" value="F" />
+              <label>Female</label>
+              <input type="radio" name="gender" value="C" />
+              <label>Others</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="country">Select Country</label></td>
+            <td>
+              <select name="country">
+                <option class="opt" value="IND">INDIA</option>
+                <option class="opt" value="US">USA</option>
+                <option class="opt" value="RUS">RUSSIA</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="file">Upload picture</label></td>
+            <td><input type="file" /></td>
+          </tr>
+          <tr>
+            <td><input type="reset" /></td>
+            <br />
+            <br />
+          </tr>
+        </table>
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <legend>Course Details</legend>
+        <table>
+          <tr>
+            <td><label for="course">Select Course</label></td>
+            <td>
+              <select name="course">
+                <option value="DSA">data</option>
+                <option value="HM">HTML</option>
+                <option value="cs">CSS</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">delivery Mode</label></td>
+            <td>
+              <input type="radio" name="delivery Mode" /><label>Online</label>
+              <input type="radio" name="delivery Mode" /><label>Offline</label>
+            </td>
+          </tr>
+        </table>
+
+        <label for="comments">Comments</label><br />
+
+        <textarea name="" id="" cols="50" rows="6"></textarea> <br />
+
+        <input type="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
